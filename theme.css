@@ -125,7 +125,7 @@ body{
   border-radius: 8px 8px 8px 8px !important;
   --curve: 0px;
   margin-bottom: 2px !important;
-  background-color: #101420 !important;
+  background-color: #0e2a7d !important;
 }
 [theme=dark] #root > div.css-7u0c5i > div.css-7u0c5i > div:nth-child(1) > div:nth-child(2) > div:nth-child(2){
   border-radius: 10px;
@@ -138,4 +138,16 @@ body{
 }
 [theme=light] div[role="renderer-container"] > div > div > div > div[role="table-wrapper"] {
   background-color: #f7f7f7;
+}
+[theme=light] .css-114x9oi {
+  background-color: #fff;
+}
+[theme=light] div.dock-pane-cache > div > div >div >div >div > div > div._tabPane_rymrh_43 {
+  background-color: #fff;
+}
+[theme=light] div.dock-pane-cache > div > div > div > div > div >div >div >div > div > div._tabPane_rymrh_43 {
+  background-color: #fff;
+}
+[theme=light] div.dock-pane-cache > div > div >div >div {
+  background-color: #fff;
 }

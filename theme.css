@@ -151,9 +151,10 @@ body{
   border-radius: 12px;
   background-color: #101420;
 }
-[theme=light] div[role="renderer-container"] > div > div > div > div[role="table-wrapper"] {
+/* 表格视图表头 */
+/* [theme=light] div[role="renderer-container"] > div > div > div > div[role="table-wrapper"] {
   background-color: #f7f7f7;
-}
+} */
 /* 日历视图表头 */
 /* div > div > div.selectable > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(1) {
   background: #fff !important;
@@ -162,4 +163,8 @@ body{
 [theme=light] div[role="tabpane"] {
     --light-background-color: #b0b0b0; /* 设置一个新的值 */
     background-color: var(--light-background-color) !important; /* 使用这个新的值 */
+}
+/* 收起工作区后的左侧边栏 */
+._list_10eff_81.css-1cykvrv {
+  background-color: #b0b0b0 !important;
 }

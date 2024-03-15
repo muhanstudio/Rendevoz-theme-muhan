@@ -1,32 +1,39 @@
 /* Rendevoz主题-木涵 */
 /* author: muhanstudio */
 /* Repo: https://github.com/muhanstudio/Rendevoz-theme-muhan */
+/* 字体 */
 @import url('https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css');
 
 * {
     /* Screen version */
     font-family: "LXGW WenKai Screen", sans-serif !important;
 }
+/* 亮色全局配色 */
 html[theme=light] body {
   --popover-background: #ffffff;
   --font-primary: #000000;
   --font-transparent: rgb(0 0 0);
   --tabs-bg: #b0b0b0;
-  --scroll-bar: none;
+  /* 隐藏侧边滚动条 */
+  /* --scroll-bar: none; */
   --background-secondary: #b0b0b0;
 }
+/* 暗色全局配色 */
 html[theme=dark] body {
   --popover-background: #151C32;
   --font-primary: #ffffff;
   --font-transparent: rgb(255 255 255);
   --tabs-bg: #151C32;
-  --scroll-bar: none;
+  /* 隐藏侧边滚动条 */
+  /* --scroll-bar: none; */
   --background-secondary: #151C32;
 }
+/* 工作区字体 */
 .css-1p0w246 {
   font-size: 13.5px !important;
   font-weight: 500 !important;
 }
+/* 禁止一切动画 */
 *,
 *::before,
 *::after {
@@ -38,6 +45,7 @@ html[theme=dark] body {
   transition: none !important;
   transition-duration: 0s !important;
 }
+/* 禁止背景虚化 */
 div[role="backdrop"]{
   background:rgba(15, 15, 15, 0) !important;
 }
@@ -48,6 +56,7 @@ div.css-114x9oi > div.css-7rvzoe > div:nth-child(2) {
 div[role="modal-container"] > div:nth-child(1) {
   opacity: 0 !important;
 }
+/* 设置页，弹出菜单页背景图片 */
 body > div:nth-child(7) > div.css-1boow1i > div > div {
   /* 设置背景图片 */
   background-image: url('https://imgapi.cn/bing.php');
@@ -79,8 +88,9 @@ body > div:nth-child(7) > div.css-1boow1i > div > div {
   background: rgba(0, 0, 0, 0.5); 
   z-index: -1;
 }
+/* 全局背景 */
 body{
-  --light-background-color: #b0b0b0;
+  /* --light-background-color: #b0b0b0; */
   --dark-background-color: #151C32;
 }
 .css-cm74m3 {
@@ -88,7 +98,7 @@ body{
   font-size: 35px;
   margin-bottom: 5px;
 }
-
+/* 文档标题字体放大和加下虚线 */
 [theme=light] .css-cm74m3:after {
   content: '';
   position: absolute;
@@ -105,6 +115,7 @@ body{
   width: 100%; /* 宽度为父元素宽度的100% */
   border-bottom: 2px dashed #fff; /* 设置为1px的虚线，颜色为黑色 */
 }
+/* 顶栏标签页圆角化 */
 [theme=light] ._tabContent_kmycr_55._active_kmycr_41 {
   border-radius: 8px 8px 8px 8px !important;
   --curve: 0px;
@@ -114,11 +125,13 @@ body{
 ._tabContent_kmycr_55 {
   height: 90%;
 }
+/* 工作区背景 */
 [theme=light] #root > div.css-7u0c5i > div.css-7u0c5i > div:nth-child(1) > div:nth-child(2) > div:nth-child(2){
   border-radius: 10px;
   background-color: #e7e7e7;
   margin-right: 5px;
 }
+/* 编辑器背景 */
 [theme=light] .dock-pane-cache {
   border-radius: 10px;
   background-color: #fff;
@@ -141,15 +154,12 @@ body{
 [theme=light] div[role="renderer-container"] > div > div > div > div[role="table-wrapper"] {
   background-color: #f7f7f7;
 }
-[theme=light] .css-114x9oi {
-  background-color: #fff;
-}
-[theme=light] div.dock-pane-cache > div > div >div >div >div > div > div._tabPane_rymrh_43 {
-  background-color: #fff;
-}
-[theme=light] div.dock-pane-cache > div > div > div > div > div >div >div >div > div > div._tabPane_rymrh_43 {
-  background-color: #fff;
-}
-[theme=light] div.dock-pane-cache > div > div >div >div {
-  background-color: #fff;
+/* 日历视图表头 */
+/* div > div > div.selectable > div:nth-child(2) > div > div > div > div:nth-child(1) > div:nth-child(1) {
+  background: #fff !important;
+} */
+/* 工作区背景 */
+[theme=light] div[role="tabpane"] {
+    --light-background-color: #b0b0b0; /* 设置一个新的值 */
+    background-color: var(--light-background-color) !important; /* 使用这个新的值 */
 }

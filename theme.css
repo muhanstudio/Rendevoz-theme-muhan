@@ -115,9 +115,9 @@ body{
   width: 100%; /* 宽度为父元素宽度的100% */
   border-bottom: 2px dashed #fff; /* 设置为1px的虚线，颜色为黑色 */
 }
-/* 顶栏标签页圆角化 */
+/* light顶栏标签页圆角化 */
 [theme=light] ._tabContent_kmycr_55._active_kmycr_41 {
-  border-radius: 8px 8px 8px 8px !important;
+  border-radius: 5px 5px 5px 5px !important;
   --curve: 0px;
   margin-bottom: 2px !important;
   background-color: #fff !important;
@@ -125,28 +125,31 @@ body{
 ._tabContent_kmycr_55 {
   height: 90%;
 }
-/* 工作区背景 */
+/* light工作区背景 */
 [theme=light] #root > div.css-7u0c5i > div.css-7u0c5i > div:nth-child(1) > div:nth-child(2) > div:nth-child(2){
   border-radius: 10px;
   background-color: #e7e7e7;
   margin-right: 5px;
 }
-/* 编辑器背景 */
+/* light编辑器背景 */
 [theme=light] .dock-pane-cache {
   border-radius: 10px;
   background-color: #fff;
 }
+/* dark顶栏标签页圆角化 */
 [theme=dark] ._tabContent_kmycr_55._active_kmycr_41 {
-  border-radius: 8px 8px 8px 8px !important;
+  border-radius: 5px 5px 5px 5px !important;
   --curve: 0px;
   margin-bottom: 2px !important;
   background-color: #0e2a7d !important;
 }
+/* dark工作区背景 */
 [theme=dark] #root > div.css-7u0c5i > div.css-7u0c5i > div:nth-child(1) > div:nth-child(2) > div:nth-child(2){
   border-radius: 10px;
   background-color: #101420;
   margin-right: 5px;
 }
+/* dark编辑器背景 */
 [theme=dark] .dock-pane-cache {
   border-radius: 12px;
   background-color: #101420;

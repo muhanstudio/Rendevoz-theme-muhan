@@ -165,6 +165,10 @@ body{
     background-color: var(--light-background-color) !important; /* 使用这个新的值 */
 }
 /* 收起工作区后的左侧边栏 */
-._list_10eff_81.css-1cykvrv {
+[theme=light] ._list_10eff_81.css-1cykvrv {
   background-color: #b0b0b0 !important;
+}
+/* 代码实体标题 */
+.css-qdcqpj {
+  font-size: 25px;
 }
